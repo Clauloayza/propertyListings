@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import GoogleMaps from './GoogleMaps';
 import ReactGoogleAutocomplete from './ReactGoogleAutocomplete';
- import {
+
+import {
 	BrowserRouter,
 	Route,
 	Switch,
@@ -9,10 +10,7 @@ import ReactGoogleAutocomplete from './ReactGoogleAutocomplete';
 	Redirect
 } from 'react-router-dom'
 import './index.css';
-
-const Menu =({model}) => {
-
-}
+//import PropertiesLists from './PropertiesLists.js';
 
 const LyftMap = ({model}) => {
 
@@ -56,10 +54,10 @@ const LyftMap = ({model}) => {
 	}
 
 	return (<div>
-			<div className="container">
+			<div className="container-fluid">
 				<div className="row">
 					
-					<div className="col-lg-6 col-md-6 col-xs-6">
+					<div className="col-lg-6 col-md-6 col-xs-12">
 					<button className="cta-button">
 						<span className="icon icon-list glyphicon glyphicon-info-sign" aria-hidden="true"></span>
 					</button>
@@ -73,7 +71,7 @@ const LyftMap = ({model}) => {
 						isRouting={isRouting}
 					/>
 					</div>
-					<div className="col-lg-6 col-md-6 col-xs-6">
+					<div className="col-lg-6 col-md-6 col-xs-12">
 						<header>
 							<img src="./images/house-location-pin.svg"/>
 							<h1>"Property"
@@ -83,182 +81,6 @@ const LyftMap = ({model}) => {
 						</header>
 						<div className="cards">
 							<div className="cards-list">
-								<div className="card col-xs-12 col-md-6 col-lg-4">
-									<img src='./images/property1.jpg' alt="Singer"/>
-									<p className="price">$937,180</p>
-									<div className="details">
-										<span className="index">1</span>
-										<p className="location">"Singer" <br/> "914 Argyle Road"</p>
-										<ul>
-											<li className="icon-bed">
-												"2"
-												<span>bedrooms</span>
-											</li>
-											<li className="icon-bath">
-												"2"
-												<span>bathrooms</span>
-											</li>
-											<li className="icon-car">
-												"2"
-												<span>parking spots</span>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div className="card col-xs-12 col-md-6 col-lg-4">
-									<img src='./images/property1.jpg' alt="Singer"/>
-									<p className="price">$937,180</p>
-									<div className="details">
-										<span className="index">1</span>
-										<p className="location">"Singer" <br/> "914 Argyle Road"</p>
-										<ul>
-											<li className="icon-bed">
-												"2"
-												<span>bedrooms</span>
-											</li>
-											<li className="icon-bath">
-												"2"
-												<span>bathrooms</span>
-											</li>
-											<li className="icon-car">
-												"2"
-												<span>parking spots</span>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div className="card col-xs-12 col-md-6 col-lg-4">
-									<img src='./images/property1.jpg' alt="Singer"/>
-									<p className="price">$937,180</p>
-									<div className="details">
-										<span className="index">1</span>
-										<p className="location">"Singer" <br/> "914 Argyle Road"</p>
-										<ul>
-											<li className="icon-bed">
-												"2"
-												<span>bedrooms</span>
-											</li>
-											<li className="icon-bath">
-												"2"
-												<span>bathrooms</span>
-											</li>
-											<li className="icon-car">
-												"2"
-												<span>parking spots</span>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div className="card col-xs-12 col-md-6 col-lg-4">
-									<img src='./images/property1.jpg' alt="Singer"/>
-									<p className="price">$937,180</p>
-									<div className="details">
-										<span className="index">1</span>
-										<p className="location">"Singer" <br/> "914 Argyle Road"</p>
-										<ul>
-											<li className="icon-bed">
-												"2"
-												<span>bedrooms</span>
-											</li>
-											<li className="icon-bath">
-												"2"
-												<span>bathrooms</span>
-											</li>
-											<li className="icon-car">
-												"2"
-												<span>parking spots</span>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div className="card col-xs-12 col-md-6 col-lg-4">
-									<img src='./images/property1.jpg' alt="Singer"/>
-									<p className="price">$937,180</p>
-									<div className="details">
-										<span className="index">1</span>
-										<p className="location">"Singer" <br/> "914 Argyle Road"</p>
-										<ul>
-											<li className="icon-bed">
-												"2"
-												<span>bedrooms</span>
-											</li>
-											<li className="icon-bath">
-												"2"
-												<span>bathrooms</span>
-											</li>
-											<li className="icon-car">
-												"2"
-												<span>parking spots</span>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div className="card col-xs-12 col-md-6 col-lg-4">
-									<img src='./images/property1.jpg' alt="Singer"/>
-									<p className="price">$937,180</p>
-									<div className="details">
-										<span className="index">1</span>
-										<p className="location">"Singer" <br/> "914 Argyle Road"</p>
-										<ul>
-											<li className="icon-bed">
-												"2"
-												<span>bedrooms</span>
-											</li>
-											<li className="icon-bath">
-												"2"
-												<span>bathrooms</span>
-											</li>
-											<li className="icon-car">
-												"2"
-												<span>parking spots</span>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div className="card col-xs-12 col-md-6 col-lg-4">
-									<img src='./images/property1.jpg' alt="Singer"/>
-									<p className="price">$937,180</p>
-									<div className="details">
-										<span className="index">1</span>
-										<p className="location">"Singer" <br/> "914 Argyle Road"</p>
-										<ul>
-											<li className="icon-bed">
-												"2"
-												<span>bedrooms</span>
-											</li>
-											<li className="icon-bath">
-												"2"
-												<span>bathrooms</span>
-											</li>
-											<li className="icon-car">
-												"2"
-												<span>parking spots</span>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div className="card col-xs-12 col-md-6 col-lg-4">
-									<img src='./images/property1.jpg' alt="Singer"/>
-									<p className="price">$937,180</p>
-									<div className="details">
-										<span className="index">1</span>
-										<p className="location">"Singer" <br/> "914 Argyle Road"</p>
-										<ul>
-											<li className="icon-bed">
-												"2"
-												<span>bedrooms</span>
-											</li>
-											<li className="icon-bath">
-												"2"
-												<span>bathrooms</span>
-											</li>
-											<li className="icon-car">
-												"2"
-												<span>parking spots</span>
-											</li>
-										</ul>
-									</div>
-								</div>
 								<div className="card col-xs-12 col-md-6 col-lg-4">
 									<img src='./images/property1.jpg' alt="Singer"/>
 									<p className="price">$937,180</p>
